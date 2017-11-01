@@ -5,36 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NL</title>
     <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
-    <link rel="stylesheet" type="type/css" href="../bootStrap/bootstrap-3.3.6-dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <div id="interface" class="container" >
-        <div class="row">
-            <nav  id="menu" class="navbar navbar-dafault navbar-fixed-top" >
-                 <div class="container">
+    <div id="interface">
+        <header id="cabecalho">
+            <nav  id="menu" class="navbar navbar-inverse navbar-static-top">
+                <div class="container-fluid">
                     <div class="navbar-header" id="cabecalho">
-                          <a class="navbar-brand" href="index.html">NL</a>
+                        <a class="navbar-brand" href="index.html">USJT</a>
                     </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="categorias.html">Categorias</a></li>
+                        <li><a href="quemsomos.html">Quem Somos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right">
+                        <div class="input-group">
+                            <input id="searchbar" type="text" class="form-control" placeholder="Procurar">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
             </nav>
-            <div class="container">
-                <div class="row">
-                    <div id="novidades"></div>
+       </header>
+        <div class="container" >
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        <div id="novidades"></div>
 
-                    <div id="categorias"></div>
+                        <div id="categorias"></div>
 
-                    <div id="produtos"></div>
+                        <div id="produtos"></div>
 
-                    <div id="carrinho"></div>
+                        <div id="carrinho"></div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <footer id="rodape">
+            <p>Copyright 2017 &copy; - By Natã A.G & Leo Adan <br>
+            <img>
+            </p>
+        </footer>
     </div>
 </body>
 </html>

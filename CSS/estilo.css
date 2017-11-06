@@ -6,11 +6,9 @@ body {
 }
 
 div#interface {
-    width: 1400px;
     background-color: #ffffff;
     margin: 0px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
-    padding: 10px;
 }
 
 p {
@@ -19,11 +17,25 @@ p {
 }
 
 /* Formatação da barra de pesquisa*/
-input#searchbar.form-control {
+
+nav#login ul {
+    margin-right: 0px;
+}
+
+nav#menu {
+    margin-top: -21px;
 }
 
 /* Formatação do rodapé */
 footer#rodape {
     clear: both;
     border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+
+input#searchbar {
+    padding-right: 200px;
 }

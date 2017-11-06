@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Formatação do corpo */
+/* Formatação do corpo inteiro */
 body {
     background-color: #dddddd;
     color: rgba(0,0,0,1);
@@ -7,7 +7,7 @@ body {
 
 div#interface {
     background-color: #ffffff;
-    margin: 0px auto 0px auto;
+    margin: 0 auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 }
 
@@ -39,3 +39,44 @@ footer#rodape p {
 input#searchbar {
     padding-right: 200px;
 }
+
+/* Formatação da Section*/
+div#novidades {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+div#novidades img {
+    width:100%;  
+}
+
+
+div#arrowleft {
+    
+    box-sizing: border-box;
+    left: 20px;
+    position: absolute;
+    top: 71px;
+    opacity: 0.6;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 56px;
+    height: 60px;
+    cursor: pointer;
+    font-size:4em;
+}
+
+div#arrowright {
+    box-sizing: border-box;
+    right: 20px;
+    position: absolute;
+    top: 71px;
+    opacity: 0.6;
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 56px;
+    height: 60px;
+    cursor: pointer;
+    font-size:4em;
+}
+

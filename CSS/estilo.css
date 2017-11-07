@@ -3,12 +3,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #dddddd;
+    margin: 0px auto 0px auto;
     color: rgba(0,0,0,1);
 }
 
 div#interface {
     background-color: #ffffff;
     margin: 0 auto;
+    margin: 0px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 }
 
@@ -27,21 +29,11 @@ nav#menu {
     margin-top: -21px;
 }
 
-/* Formatação do rodapé */
-footer#rodape {
-    clear: both;
-    border-top: 1px solid #606060;
-}
-
-footer#rodape p {
-    text-align: center;
-}
-
 input#searchbar {
-    padding-right: 200px;
+    padding-right: 400px;
 }
 
-/* Formatação da Section*/
+/* Formatação da Galeria*/
 div#novidades {
     display: block;
     position: relative;
@@ -51,14 +43,13 @@ div#novidades img {
     width:100%;  
 }
 
-
 div#arrowleft {
     
     box-sizing: border-box;
     left: 20px;
     position: absolute;
     top: 71px;
-    opacity: 0.6;
+    opacity: 0.7;
     background-color: #ccc;
     border-radius: 50%;
     width: 56px;
@@ -72,7 +63,7 @@ div#arrowright {
     right: 20px;
     position: absolute;
     top: 71px;
-    opacity: 0.6;
+    opacity: 0.7;
     background-color: #ccc;
     border-radius: 50%;
     width: 56px;
@@ -81,3 +72,49 @@ div#arrowright {
     font-size:4em;
 }
 
+div#arrowleft:hover, div#arrowright:hover {
+    opacity: 0.5;
+}
+/* Formatação do Corpo */
+
+div.produtos {
+    margin-top: 20px;
+}
+div.produtos #categorias{
+    width: 18%;
+    height: 900px;
+    background-color:#606060;
+    float: left;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+div.produtos #carrinho{
+    width:18%;
+    height: 900px;
+    background-color:#606060;
+    float: right;
+    border-radius: 5px 5px 5px 5px;
+}
+div.produtos #produtosHome{
+    width: 62%;
+    margin: 0 auto;
+    background-color: #606060;
+    border-radius:  10px 10px 10px 10px;
+}
+
+/* Formatação do rodapé */
+footer#rodape {
+    clear: both;
+    border: 1px solid #606060;
+    width: 100%;
+    height: 300px;
+    background-color: #606060;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+footer#rodape p {
+    text-align: center;
+}

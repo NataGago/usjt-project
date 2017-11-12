@@ -55,7 +55,9 @@ div#produtoSlide figure{
     border:2px solid #000;
 }
 div#produtoSlide img {
-    width:100%;  
+    max-width:100%;
+    width: 420px;
+    height: 347px;
 }
 
 div#arrowleftProduto {
@@ -121,6 +123,7 @@ div#produtos h1{
 }
 
 #produto1Preco button{
+    margin-top: 56px;
     font-size: 20px;
     font-family: Arial, sans-serif;
     color: white;

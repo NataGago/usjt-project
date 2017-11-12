@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* Formatação do corpo inteiro */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddddd;
+    margin: 0px auto 0px auto;
+    color: rgba(0,0,0,1);
+}
+
+div#interface {
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+}
+
+
+
+/* Formatação da barra de pesquisa*/
+
+/* ###Logo, Login e Cadastro### */
+
+nav#menu {
+    margin-top: -21px;
+    background-color: black;
+}
+
+
+/* Quem Somos :D-*/
+#QuemSomos{
+    height: 790px;
+    background-color: greenyellow;
+    border-radius: 15px 15px 15px 15px;
+    padding: 35px;
+}
+.quemsomosLoja{
+    padding: 2%;
+    background-color:salmon;
+    border-radius: 15px 15px 15px 15px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    
+}
+
+.nata{
+    margin-top:2%;
+    height: 250px;
+    background-color: salmon;
+    border:4px solid #84d6ff;
+    border-radius: 15px 15px 15px 15px;
+}
+.nata #nataImg{
+    margin: 2%;
+    margin-top: 5%;
+}
+.nata h2{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size:35px;
+}
+.nata p{
+    width: 70%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -12%;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+
+.leo{
+    margin-top: 2%;
+    height: 250px;
+    background-color: salmon;
+    border:4px solid #84d6ff;
+    border-radius: 15px 15px 15px 15px;
+}
+.leo #leoImg{
+    margin: 2%;
+    margin-top: 5%;
+}
+.leo h2{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size:35px;
+}
+.leo p{
+    width: 70%;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -12%;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+/* Formatação do rodapé */
+footer#rodape {
+    clear: both;
+    border: 1px solid #606060;
+    width: 100%;
+    height: 200px;
+    background-color: #606060;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 15px 15px 15px 15px;
+
+}
+
+footer#rodape p {
+    text-align: center;
+}
+.informacoes{
+    width: 30%;
+    height: 180px;
+    float: left;
+    border-radius: 10px 10px 10px 10px;
+    margin: 0.8%;
+    background-color: aqua;
+    
+}
+.informacoes p{
+    font-family: arial, sans-serif;
+    margin-top: 3%;
+    font-size: 86%;
+    text-align: center;
+}
+.newsletter{
+    width: 35%;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    margin:auto;
+    float:inherit;
+    margin:     0.8%;
+    background-color: aqua;
+}
+.newsletter p{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align:inherit;
+    
+}
+.newsletter #Ok{
+    position: absolute;
+    float: right;
+    
+}
+.form-group{
+    margin-top: -10px;
+}
+.form-control{
+    max-width: 80%;
+    min-width: 7%;
+}
+.newsletter #Ok{
+    position: absolute;
+    margin-left: 84%;
+    margin-top: 10%;
+    width: 10%;
+    height: 20%;
+    border-radius: 5px 5px 5px 5px;
+}
+.redes{
+    width: 30%;
+    height: 180px;
+    border-radius: 10px 10px 10px 10px;
+    float: right;
+    margin: 0.8%;
+    background-color: aqua;
+    
+}
+.redes p{
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: justify;
+  
+}
+.redes img{
+    width:20%;
+    height: auto;
+    border-radius: 20px;
+    margin-left: 10%;
+    float: right;
+}

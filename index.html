@@ -1,342 +1,504 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NL</title>
-    <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="JS/fuction.js"></script>
 </head>
+
 <body>
-<div id="interface" class="container">
-    <div class="row">
-        <div class="col-sm-12">             
-            <header class="cabecalho">
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">           
-                    <nav id="login" class="navbar navbar-static-top">
-                        <div class="col-lg-12 col-md-12 col-sm-12">
-                            <div class="Login">
-                                <img id="logo" src="img/LogoLoja.png">
-                                <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#"><i class="glyphicon glyphicon-user"></i> Cadastro</a></li>
-                                        <li><a href="#"><i class="glyphicon glyphicon-log-in"></i> Login</a></li> 
+    <div id="interface" class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <header class="cabecalho">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <nav id="login" class="navbar navbar-static-top">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="Login">
+                                    <img id="logo" src="img/LogoLoja.png">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <a href="#">
+                                                <i class="glyphicon glyphicon-user"></i> Cadastro</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="glyphicon glyphicon-log-in"></i> Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <nav id="menu" class="navbar navbar-inverse navbar-static-top">
+                            <div class="container-fluid">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="categorias.html">Categorias</a>
+                                    </li>
+                                    <li>
+                                        <a href="quemsomos.html">Quem Somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="contato.html">Contato</a>
+                                    </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </nav>
-                    <nav  id="menu" class="navbar navbar-inverse navbar-static-top">
-                        <div class="container-fluid">
-                            <ul class="nav navbar-nav">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="categorias.html">Categorias</a></li>
-                                <li><a href="quemsomos.html">Quem Somos</a></li>
-                                <li><a href="contato.html">Contato</a></li>
-                            </ul>
-                            <form class="navbar-form navbar-right">
-                                <div class="input-group">
-                                <input id="searchbar" type="text" class="form-control" placeholder="Procurar">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-default" type="submit">
-                                            <i class="glyphicon glyphicon-search"></i>
-                                        </button>
+                                <form class="navbar-form navbar-right">
+                                    <div class="input-group">
+                                        <input id="searchbar" type="text" class="form-control" placeholder="Procurar">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default" type="submit">
+                                                <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-                    </nav>
-                </div>
-            </header>           
-    <!-- ########################################-->            
-            <section id="corpo">
-                <div class="container-fluid" >
-                    <div class="row"> 
-                        <div class="col-sm-12">
-                            <div id="novidades">
-                                <div id="arrowleft"><i class="glyphicon glyphicon-menu-left"></i></div>
-                                <div id="arrowright"><i class="glyphicon glyphicon-menu-right"></i></div>
-                                <img src="" id="imgGde" class="img-responsive"/>
+                                </form>
                             </div>
-                        </div>
+                        </nav>
                     </div>
-                </div>
-                <main>
+                </header>
+                <!-- ########################################-->
+                <section id="corpo">
                     <div class="container-fluid">
-                        <div class="produtos">
-                            <div class="row">
-                                <div id = "categorias" class="col-sm-2" style="width: 20.833333325;">  
-                                    <h2 style="text-align: center;">Categorias</h2>
-                                    <div id="processadores">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr><th>Processadores</th></tr>
-                                                </thead>
-                                                <tbody>
-                                                    <th style="color:#02507e">Intel</th>
-                                                    <tr><td>I3-7100</td></tr>
-                                                    <tr><td>I5-7400</td></tr>
-                                                    <tr><td>I5-7600</td></tr>
-                                                    <tr><td>I7-7700K</td></tr>
-                                                    <th style="color:#02507e">AMD</th>
-                                                    <tr><td>R3-1200</td></tr>
-                                                    <tr><td>R5-1400</td></tr>
-                                                    <tr><td>R5-1600</td></tr>
-                                                    <tr><td>R7-1800X</td></tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="novidades">
+                                    <div id="arrowleft">
+                                        <i class="glyphicon glyphicon-menu-left"></i>
                                     </div>
-                                    <div id="placasMae">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr><th>Placas Mãe</th></tr>
-                                                </thead>
-                                                <tbody>
-                                                    <th style="color:#02507e">LGA 1151</th>
-                                                    <tr><td>Asus Prime Z370-A</td></tr>
-                                                    <tr><td>Asus-ROG-Maximus-IX-Forumla-Z270</td></tr>
-                                                    <tr><td>Gigabyte GA-H270-HD3</td></tr>
-                                                    <tr><td>MSI B250M PRO-VH</td></tr>
-                                                    <th style="color:#02507e">AM4</th>
-                                                    <tr><td>ASRock AM4 A320M</td></tr>
-                                                    <tr><td>Asus Prime B350 PLUS</td></tr>
-                                                    <tr><td>MSI X370 XPower Gaming</td></tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                    <div id="arrowright">
+                                        <i class="glyphicon glyphicon-menu-right"></i>
                                     </div>
-                                    
-                                    <div id="gpu">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr><th>Placa de Video</th></tr>
-                                                </thead>
-                                                <tbody>
-                                                    <th style="color:#02507e">NVIDIA</th>
-                                                    <tr><td>GeForce 1080 TI</td></tr>
-                                                    <tr><td>GeForce 1070</td></tr>
-                                                    <tr><td>GeForce 1060</td></tr>
-                                                    <tr><td>GeForce 1050 TI</td></tr>
-                                                    <tr><td>GeForce 1030</td></tr>
-                                                    <th style="color:#02507e">ATI</th>
-                                                    <tr><td>RX 580</td></tr>
-                                                    <tr><td>RX 570</td></tr>
-                                                    <tr><td>RX 560</td></tr>
-                                                    <tr><td>RX VEGA</td></tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    
+                                    <img src="" id="imgGde" class="img-responsive" />
                                 </div>
-                                <div id = "produtosHome" class="col-sm-7">
-                                    <div id="produtos">
-                                        <table class="table">
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <img src="img/Produtos/Processador/Ryzen1800X/BOX.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>AMD Ryzen 7 1800X, Octa Core, Cache 20MB, 3.6Ghz (4.0GHz Max Turbo) AM4 YD180XBCAEWOF</p>
-                                                        <p>R$ 1.899,90</p>
-                                                        <span><a href="produto2.html"><strong>Adicionar</strong></a></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos//PlacaMae/AMD/MSI-X370-XPower-Gaming-Titanium/BOX.png" alt="Produtos" width="125px" height="125px">
-                                                        <p>MSI p/ AMD AM4 ATX X370 XPOWER GAMING TITANIUM DDR4</p>
-                                                        <br><p>R$ 1.589,90</p>
-                                                        <span><a href="produto1.html"><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/MemoriaRam/DDR4/G-SKILL-TridentZ-RGB-Series-16GB-2x8-3600Mhz/RAM.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>G.SKill Trident Z RGB 16GB (2x8GB) 3600MHz DDR4 CL 16 - F4-3600C16D-16GTZR</p>
-                                                        <br><p>R$ 1.299,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>     
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="img/Produtos/PlacaDeVideo/1080TI-STRIX/BOX.png" alt="Produtos" width="125px" height="125px">
-                                                        <p>ASUS Geforce GTX 1080 TI 11GB ROG STRIX OC Edition DDR5X 352BITS - ROG-STRIX-GTX1080TI</p>
-                                                        <p>R$ 4.695,90 </p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/PlacaDeVideo/Gigabyte-1070-G1-GAMING/BOX.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>GIGABYTE GEFORCE GTX 1070 G1 Gaming 8G - GV-N1070G1 Gaming-8GD</p>
-                                                        <br><p>R$ 2.117,54</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/SSD/Kingston-Fury-240GB.png" alt="Produtos" width="125px" height="125px">
-                                                        <p>Kingston HyperX Fury 2.5´ 240GB SATA III 6Gb/s Leituras: 500MB/s e Gravações: 500MB/s - SHFS37A/240G</p>
-                                                        <p>R$ 569,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>    
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="img/Produtos/HD/Seagate-BarraCuda-7200RPM.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>Seagate SATA 3,5´ BarraCuda 1TB 7200RPM 64MB Cache SATA 6Gb/s - ST1000DM010</p>
-                                                        <p>R$ 229,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/Processador/I7-7700k/BOX.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>Core i7-7700K, Cache 8MB 4.2GHz (4.5GHz Max Turbo), LGA 1151 - BX80677I77700K</p>
-                                                        <p>R$ 1.337,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/PlacaMae/Intel/Asus-ROG-Maximus-IX-Forumla-Z270/BOX.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>ASUS ATX MAXIMUS IX FORMULA,4 x DDr4, LGA 1151 Aura RGB</p>
-                                                        <p>R$ 1.999,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="img/Produtos/Processador/i5-7400/BOX.png" alt="Produtos" width="125px" height="125px">
-                                                        <p>Intel Core i5-7400 Kaby Lake, Cache 6MB, 3.0Ghz (3.5GHz Max Turbo), LGA 1151 - BX80677I57400</p>
-                                                        <p>R$ 794,90 </p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/MemoriaRam/DDR4/Corsair-Dominator-Platinum-16GB-4x4-3600Mhz/RAM.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>Corsair Dominator Platinum 16GB (4x4GB) 3600Mhz DDR4 CL15 - CMD16GX4M4B3000C15</p>
-                                                        <p>R$ 1.589,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/PlacaDeVideo/580-GAMING/BOX.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>GIGABYTE RADEON RX 580 Gaming 8GB DDR5 GV-RX580GAMING-8GD</p>
-                                                        <br><p>R$ 2.142,95</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>     
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <img src="img/Produtos/PlacaMae/AMD/Asus-Prime-B350-PLUS/Box.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>AM4 ATX PRIME B350-PLUS</p>
-                                                        <br><br><br><p>R$ 758,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/SSD/Sandisk-120GB.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>Sandisk PLUS 2.5´ SATA III 6Gb/s 120GB Leitura: 530MB/s e Gravações: 400MB/s - SDSSDA-120G-G26</p>
-                                                        <p>R$ 294,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>
-                                                    <td>
-                                                        <img src="img/Produtos/PlacaDeVideo/VEGA-64/BOX.jpg" alt="Produtos" width="125px" height="125px">
-                                                        <p>AMD XFX RADEON RX VEGA 64 RADEON HBM2 8GB LIQUID COOLED RX-VEGMXWFXW</p>
-                                                        <p>R$ 3.499,90</p>
-                                                        <span><strong>Adicionar</strong></span>
-                                                    </td>     
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            </div>
+                        </div>
+                    </div>
+                    <main>
+                        <div class="container-fluid">
+                            <div class="produtos">
+                                <div class="row">
+                                    <div id="categorias" class="col-sm-2" style="width: 20.833333325;">
+                                        <h2 style="text-align: center;">Categorias</h2>
+                                        <div id="processadores">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Processadores</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <th style="color:#02507e">Intel</th>
+                                                        <tr>
+                                                            <td>I3-7100</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>I5-7400</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>I5-7600</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>I7-7700K</td>
+                                                        </tr>
+                                                        <th style="color:#02507e">AMD</th>
+                                                        <tr>
+                                                            <td>R3-1200</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>R5-1400</td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td>R5-1600</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>R7-1800X</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div id="placasMae">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Placas Mãe</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <th style="color:#02507e">LGA 1151</th>
+                                                        <tr>
+                                                            <td>Asus Prime Z370-A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Asus-ROG-Maximus-IX-Forumla-Z270</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Gigabyte GA-H270-HD3</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>MSI B250M PRO-VH</td>
+                                                        </tr>
+                                                        <th style="color:#02507e">AM4</th>
+                                                        <tr>
+                                                            <td>ASRock AM4 A320M</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Asus Prime B350 PLUS</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>MSI X370 XPower Gaming</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div id="gpu">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Placa de Video</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <th style="color:#02507e">NVIDIA</th>
+                                                        <tr>
+                                                            <td>GeForce 1080 TI</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GeForce 1070</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GeForce 1060</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GeForce 1050 TI</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>GeForce 1030</td>
+                                                        </tr>
+                                                        <th style="color:#02507e">ATI</th>
+                                                        <tr>
+                                                            <td>RX 580</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RX 570</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RX 560</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RX VEGA</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                </div>
-                                <div id = "carrinho" class="col-sm-2" style="width: 20.833333325;">        
-                                    <div id="pedidosCarrinho">
-                                        <div class="table-responsive">
+                                    <div id="produtosHome" class="col-sm-7">
+                                        <div id="produtos">
                                             <table class="table">
-                                                <thead>
-                                                    <tr><th>Carrinho</th></tr>
-                                                </thead>
                                                 <tbody>
-                                                    <tr><td>Produto</td></tr>
-                                                    <tr><td>Produto</td></tr>
-                                                    <tr><td>Produto</td></tr>
-                                                    <tr><td>Produto</td></tr>
-                                                    <tr><td>Produto</td></tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/Produtos/Processador/Ryzen1800X/BOX.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>AMD Ryzen 7 1800X, Octa Core, Cache 20MB, 3.6Ghz (4.0GHz Max
+                                                                Turbo) AM4 YD180XBCAEWOF</p>
+                                                            <p>R$ 1.899,90</p>
+                                                            <span>
+                                                                <a href="produto2.html">
+                                                                    <strong>Adicionar</strong>
+                                                                </a>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos//PlacaMae/AMD/MSI-X370-XPower-Gaming-Titanium/BOX.png" alt="Produtos" width="125px" height="125px">
+                                                            <p>MSI p/ AMD AM4 ATX X370 XPOWER GAMING TITANIUM DDR4</p>
+                                                            <br>
+                                                            <p>R$ 1.589,90</p>
+                                                            <span>
+                                                                <a href="produto1.html">
+                                                                    <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/MemoriaRam/DDR4/G-SKILL-TridentZ-RGB-Series-16GB-2x8-3600Mhz/RAM.jpg" alt="Produtos" width="125px"
+                                                                height="125px">
+                                                            <p>G.SKill Trident Z RGB 16GB (2x8GB) 3600MHz DDR4 CL 16 - F4-3600C16D-16GTZR</p>
+                                                            <br>
+                                                            <p>R$ 1.299,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/Produtos/PlacaDeVideo/1080TI-STRIX/BOX.png" alt="Produtos" width="125px" height="125px">
+                                                            <p>ASUS Geforce GTX 1080 TI 11GB ROG STRIX OC Edition DDR5X 352BITS
+                                                                - ROG-STRIX-GTX1080TI</p>
+                                                            <p>R$ 4.695,90 </p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/PlacaDeVideo/Gigabyte-1070-G1-GAMING/BOX.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>GIGABYTE GEFORCE GTX 1070 G1 Gaming 8G - GV-N1070G1 Gaming-8GD</p>
+                                                            <br>
+                                                            <p>R$ 2.117,54</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/SSD/Kingston-Fury-240GB.png" alt="Produtos" width="125px" height="125px">
+                                                            <p>Kingston HyperX Fury 2.5´ 240GB SATA III 6Gb/s Leituras: 500MB/s
+                                                                e Gravações: 500MB/s - SHFS37A/240G</p>
+                                                            <p>R$ 569,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/Produtos/HD/Seagate-BarraCuda-7200RPM.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>Seagate SATA 3,5´ BarraCuda 1TB 7200RPM 64MB Cache SATA 6Gb/s
+                                                                - ST1000DM010</p>
+                                                            <p>R$ 229,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/Processador/I7-7700k/BOX.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>Core i7-7700K, Cache 8MB 4.2GHz (4.5GHz Max Turbo), LGA 1151
+                                                                - BX80677I77700K</p>
+                                                            <p>R$ 1.337,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/PlacaMae/Intel/Asus-ROG-Maximus-IX-Forumla-Z270/BOX.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>ASUS ATX MAXIMUS IX FORMULA,4 x DDr4, LGA 1151 Aura RGB</p>
+                                                            <p>R$ 1.999,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/Produtos/Processador/i5-7400/BOX.png" alt="Produtos" width="125px" height="125px">
+                                                            <p>Intel Core i5-7400 Kaby Lake, Cache 6MB, 3.0Ghz (3.5GHz Max Turbo),
+                                                                LGA 1151 - BX80677I57400</p>
+                                                            <p>R$ 794,90 </p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/MemoriaRam/DDR4/Corsair-Dominator-Platinum-16GB-4x4-3600Mhz/RAM.jpg" alt="Produtos" width="125px"
+                                                                height="125px">
+                                                            <p>Corsair Dominator Platinum 16GB (4x4GB) 3600Mhz DDR4 CL15 - CMD16GX4M4B3000C15</p>
+                                                            <p>R$ 1.589,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/PlacaDeVideo/580-GAMING/BOX.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>GIGABYTE RADEON RX 580 Gaming 8GB DDR5 GV-RX580GAMING-8GD</p>
+                                                            <br>
+                                                            <p>R$ 2.142,95</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <img src="img/Produtos/PlacaMae/AMD/Asus-Prime-B350-PLUS/Box.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>AM4 ATX PRIME B350-PLUS</p>
+                                                            <br>
+                                                            <br>
+                                                            <br>
+                                                            <p>R$ 758,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/SSD/Sandisk-120GB.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>Sandisk PLUS 2.5´ SATA III 6Gb/s 120GB Leitura: 530MB/s e Gravações:
+                                                                400MB/s - SDSSDA-120G-G26</p>
+                                                            <p>R$ 294,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                        <td>
+                                                            <img src="img/Produtos/PlacaDeVideo/VEGA-64/BOX.jpg" alt="Produtos" width="125px" height="125px">
+                                                            <p>AMD XFX RADEON RX VEGA 64 RADEON HBM2 8GB LIQUID COOLED RX-VEGMXWFXW</p>
+                                                            <p>R$ 3.499,90</p>
+                                                            <span>
+                                                                <strong>Adicionar</strong>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
                                     </div>
-                                    <div id="listaDeDesejos">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead>
-                                                    <tr><th>Lista de Desejos</th></tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr><td>Desejo</td></tr>
-                                                    <tr><td>Desejo</td></tr>
-                                                    <tr><td>Desejo</td></tr>
-                                                    <tr><td>Desejo</td></tr>
-                                                    <tr><td>Desejo</td></tr>
-                                                </tbody>
-                                            </table>
+                                    <div id="carrinho" class="col-sm-2" style="width: 20.833333325;">
+                                        <div id="pedidosCarrinho">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Carrinho</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Produto</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Produto</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Produto</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Produto</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Produto</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div id="listaDeDesejos">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Lista de Desejos</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Desejo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Desejo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Desejo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Desejo</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Desejo</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </main>
-            </section>   
-        <!--############ #####################################  --> 
-            <footer id="rodape">
+                    </main>
+                </section>
+                <!--############ #####################################  -->
+                <footer id="rodape">
                     <div class="row">
                         <div class="col-sm-12">
-                                                
-                                    <div class="informacoes">
-                                        <div class="col-lg-12 col-md-12">
-                                            <p>Projeto é uma marca registrada de Projeto ECOMERCER LTDA | CNPJ: ##.###.###/####-## | Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional podem ser alterados sem prévio aviso. O KaBuM! não é responsável por erros descritivos. As fotos contidas nesta página são meramente ilustrativas do produto e podem variar de acordo com o fornecedor/lote do fabricante.</p>
-                                            
-                                            <p>Copyright 2017 &copy; - By Natã A.G & Leo Adan <br></p>          
-                                        </div>    
-                                    </div>          
-                                <!-- ############-->
-                        <div class="newsletter">
-                            <div class="col-lg-12 col-md-12 col-sm-12">                     
-                                <p>Assine nosso newsletter e receba as principais notícias</p>
-                                                        
-                                <button id="Ok"><span class="glyphicon glyphicon-ok"></span></button> 
-                                
-                                <div class="form-group">
-                                    <label class="control-label" for="nome">Nome</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon">
-                                            <span class="glyphicon glyphicon-user"></span>
-                                        </div>
-                                        <input class="form-control" id="email" name="email" type="text"/>
-                                    </div>
-                                </div>                    
-                                <div class="form-group">
-                                    <label class="control-label" for="email">Email</label>
-                                    <div class="input-group">
-                                        <div class="input-group-addon">@</div>
-                                        <input class="form-control" id="email" name="email" type="text"/>                          
-                                    </div>
-                                </div>             
+
+                            <div class="informacoes">
+                                <div class="col-lg-12 col-md-12">
+                                    <p>Projeto é uma marca registrada de Projeto ECOMERCER LTDA | CNPJ: ##.###.###/####-## |
+                                        Todos os direitos reservados. Os preços anunciados neste site ou via e-mail promocional
+                                        podem ser alterados sem prévio aviso. O KaBuM! não é responsável por erros descritivos.
+                                        As fotos contidas nesta página são meramente ilustrativas do produto e podem variar
+                                        de acordo com o fornecedor/lote do fabricante.</p>
+
+                                    <p>Copyright 2017 &copy; - By Natã A.G & Leo Adan
+                                        <br>
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                            <!-- ############-->
+                            <div class="newsletter">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <p>Assine nosso newsletter e receba as principais notícias</p>
+
+                                    <button id="Ok">
+                                        <span class="glyphicon glyphicon-ok"></span>
+                                    </button>
+
+                                    <div class="form-group">
+                                        <label class="control-label" for="nome">Nome</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <span class="glyphicon glyphicon-user"></span>
+                                            </div>
+                                            <input class="form-control" id="email" name="email" type="text" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="email">Email</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon">@</div>
+                                            <input class="form-control" id="email" name="email" type="text" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- #############-->
                             <div class="redes">
                                 <div class="col-lg-12  col-md-12 col-sm-12">
                                     <p>Siga as nossas Redes Sociais </p>
-                                                    
+
                                     <div class="imgRedes">
-                                    <a href="#"><img src="img/FacebookLogo.png" alt="" /></a>
+                                        <a href="#">
+                                            <img src="img/FacebookLogo.png" alt="" />
+                                        </a>
                                     </div>
-                                                    
+
                                     <div class="imgRedes">
-                                    <a href="#"><img src="img/TwitterLogo.png" alt="" /></a>
+                                        <a href="#">
+                                            <img src="img/TwitterLogo.png" alt="" />
+                                        </a>
                                     </div>
-                                                    
+
                                     <div class="imgRedes">
-                                    <a href="#"><img src="img/Instagram%20Logo.png" alt="" /></a>
+                                        <a href="#">
+                                            <img src="img/Instagram%20Logo.png" alt="" />
+                                        </a>
                                     </div>
-                                    
-                                </div>    
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -345,4 +507,5 @@
         </div>
     </div>
 </body>
+
 </html>
